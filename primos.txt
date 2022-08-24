@@ -1,0 +1,26 @@
+Algoritmo "leiaPrimo"
+Var
+numero, contador, a, b, soma: inteiro
+
+Inicio
+Escreva("Digite um número: ")
+leia(numero)
+a <- 2
+b <- 1
+enquanto a <= numero faça
+   enquanto b <= a faça
+      se(a mod b = 0) entao
+           contador <- contador + 1
+      fimse
+      b <- b + 1
+   fimenquanto
+   se( contador = 2) entao
+       escreval("o número ",a ," é primo")
+       soma <- soma + a
+   fimse
+   a <- a + 1
+   b <- 1
+   contador <- 0
+fimenquanto
+escreva ( "A soma dos numeros primos é: ", soma)
+Fimalgoritmo
